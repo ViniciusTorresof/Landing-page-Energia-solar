@@ -1,0 +1,546 @@
+@import url(global.css);
+
+.cabecalho {
+    width: 100%;
+    position: fixed;
+    background-color: #2e333d;
+    z-index: 10;
+}
+
+.container_cabecalho {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Baloo 2', sans-serif;
+    color: #ff5200;
+}
+
+.container_cabecalho .cabecalho_button {
+    width: 17rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: #5a5a5a;
+    color: #fff;
+    transition:  all .3s;
+}
+
+.container_cabecalho .cabecalho_button:hover {
+    background-color: #ff5200;
+    color: #000;
+}
+
+.section_principal {
+    height: 74rem;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section_principal .container_principal {
+    max-width: 70rem;
+    position: relative;
+}
+
+.section_principal .container_principal .destaque {
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color: #ff5200;
+}
+
+.section_principal .container_principal .titulo {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 4.2rem;
+    line-height: 6rem;
+    color: #e2e2e2;
+}
+
+.section_principal .container_principal .descricao {
+    font-weight: 400;
+    max-width: 75%;
+    color: #929292;
+}
+
+.section_principal .container_principal .button_chamativo {
+    width: 100%;
+    max-width: 40rem;
+    height: 4rem;
+    border-radius: .5rem;
+    margin: 3rem auto;
+    background-color: #ff5200;
+    color: #fff;
+    transition: all .3s;
+    font-size: 1.7rem;
+}
+
+.section_principal .container_principal .button_chamativo:hover {
+    transform: scale(1.1);
+}
+
+.section_principal .container_principal .button_saber-mais {
+    font-size: 1.7rem;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+}
+
+.section_principal .container_principal .button_saber-mais i {
+    background-color: #292c34;
+    color: #ff5200;
+    border-radius: 100%;
+    padding: 10px 12px;
+}
+
+.section_principal img {
+    width: 50rem;
+    height: 50rem;
+    object-fit: contain;
+    border-radius: 100%;
+    box-shadow: .1rem .1rem .1rem .1rem #ff5200;
+}
+
+.section_destaque {
+    min-height: 35rem;
+    padding-top: 8rem;
+}
+
+.section_destaque .titulo {
+    max-width: 55rem;
+    font-family: 'Baloo 2';
+    font-size: 3.1rem;
+    color: #bebebe;
+}
+
+.section_destaque .titulo .destaque{
+    color: #ff5200;
+}
+
+.section_destaque .container_destaque {
+    display: flex;
+    gap: 2rem;
+    margin: 4rem 0 3rem 0;
+}
+
+.section_destaque .container_destaque .bloco_destaque {
+    width: 25rem;
+}
+
+.section_destaque .container_destaque .bloco_destaque .bloco_impacto {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section_destaque .container_destaque .bloco_destaque .bloco_impacto span {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 6rem;
+    color: #ff5200;
+}
+
+.section_destaque .container_destaque .bloco_destaque .bloco_impacto .numero {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff; 
+}
+
+.section_destaque .container_destaque .bloco_destaque .descricao {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    color: #bebebe;
+}
+
+.section_destaque .borda {
+    margin-top: 4rem;
+    height: 1px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#4c4c4c), color-stop(90%, #000));
+}
+
+.section_servico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 5rem auto 7rem auto;
+}
+
+.section_servico .cabecalho_servico {
+    max-width: 56rem;
+}
+
+.section_servico .cabecalho_servico .titulo{
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.section_servico .container_servico {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.section_servico .container_servico .bloco_servico {
+    width: 100%;
+    max-width: 40rem;
+    height: 20rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.section_servico .container_servico .linha {
+    height: 1px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#ff5200), color-stop(90%, #000));
+}
+
+.section_servico .container_servico .bloco_servico i {
+    font-size: 3rem;
+    color: #ff5200;
+}
+
+.section_servico .container_servico .bloco_servico .titulo_bloco {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 2rem;
+    color: #bebebe;
+    margin: .7rem 0;
+    white-space: nowrap;
+}
+
+.section_servico .container_servico .bloco_servico .descricao_bloco {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: #bebebe;
+}
+
+.section_proposta {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 4rem auto;
+}
+
+.section_proposta .container_descricao {
+    max-width: 80rem;
+}
+
+.section_proposta .container_descricao .titulo_proposta {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.section_proposta .container_descricao .titulo_proposta .destaque {
+    color: #ff5200;
+}
+
+.section_proposta .lista_equipe {
+    width: 80%;
+}
+
+.section_proposta .lista_equipe .item_equipe {
+    padding: 2rem;
+    background-color: #292c34;
+    font-family: 'Baloo 2', sans-serif;
+    color: #bebebe;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.section_proposta .lista_equipe .item_equipe i {
+    font-size: 2rem;
+    color: #ff5200;
+    margin-right: 1rem;
+}
+
+.section_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_video .cabecalho_video .titulo {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 200;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section_video .cabecalho_video .bloco_depoimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.section_video .cabecalho_video .bloco_depoimento .subtitulo {
+    font-size: 2.5rem;
+    color: #bebebe;
+    border-right: .1rem solid #4c4c4c;
+    padding-right: 1rem;
+}
+
+.section_video .cabecalho_video .bloco_depoimento .cliente {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    color: #ff5200;
+}
+
+.section_video iframe {
+    width: 80%;
+    height: 65rem;
+    border-radius: 1rem;
+    border: .1rem solid #292c34;
+}
+
+.section_feedback {
+    margin: 6rem auto;
+    position: relative;
+}
+
+.section_feedback .cabecalho_feedback .destaque {
+    font-family: 'Baloo 2', sans-serif;
+    color: #ff5200;
+    letter-spacing: .1rem;
+}
+.section_feedback .cabecalho_feedback  .subtitulo{
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 2.6rem;
+    color: #bebebe;
+}
+
+.section_feedback .container_feedback {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.section_feedback .container_feedback  img {
+    width: 100%;
+    max-width: 40rem;
+    height: 30rem;
+    border: .2rem solid #292c34;
+    border-radius: .5rem;
+    object-fit: contain;
+}
+
+
+.section_feedback .bloco_button {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0
+}
+
+.section_feedback .bloco_button a {
+    width: 30rem;
+}
+
+.section_contato {
+    margin: 4rem auto;
+}
+
+.section_contato .titulo{
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.section_contato .titulo .destaque {
+    color: #ff5200;
+}
+
+.section_contato .formulario {
+    width: 100%;
+    max-width: 70rem;
+    margin: 4rem auto 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section_contato .formulario .bloco-input {
+    display: flex;
+    gap: 1rem;
+}
+
+.section_contato .formulario .legend {
+    font-size: 2rem;
+    color: #bebebe;
+}
+
+.section_contato .formulario input, select {
+    width: 100%;
+    height: 4.5rem;
+    background-color: transparent;
+    border: .1rem solid #292c34;
+    color: #fff;
+    border-radius: .7rem;
+    padding-left: 1rem;
+}
+.section_contato .formulario select option {
+    color: #000;
+}
+
+.section_contato .formulario .button-form {
+    height: 5rem;
+    border: .1rem solid #ff5200;
+    border-radius: .5rem;
+    background-color: transparent;
+    color: #ff5200;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+}
+
+
+.footer {
+    width: 100%;
+    height: 10rem;
+    border-top: .1rem solid #292c34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .img {
+    width: 8rem;
+}
+
+.footer .descricao {
+    color: #bebebe;
+}
+
+@media (max-width: 1000px) {
+    .section_servico, .section_destaque .container_destaque {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section_servico .cabecalho_servico {
+        max-width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .section_servico .cabecalho_servico .button_acao {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .section_principal {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section_principal .descricao {
+        margin: 0 auto;
+    }
+
+    .section_principal .container_principal .button_saber-mais {
+        right: 0;
+        left: 0;
+    }
+
+    .img-principal {
+        display: none;
+    }
+
+    .section_destaque .titulo_destaque {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .section_principal {
+        height: 60rem;
+    }
+
+    .section_proposta  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section_principal .container_principal .button_saber-mais {
+        bottom: -5rem;
+    }
+
+    .section_destaque {
+        padding-top: 4rem;
+    }
+
+    .section_proposta .container_descricao {
+        text-align: center;
+    }
+
+    .section_proposta .container_descricao .descricao_proposta {
+        margin: 0 auto;
+    }
+
+    .section_proposta .lista_equipe .item_equipe {
+        width: 100%;
+    }
+
+    .section_video iframe {
+        height: 40rem;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 55%;
+    }
+
+    .section_principal .container_principal .destaque {
+        font-size: 1.4rem;
+    }
+
+    .section_principal .container_principal .titulo, .section_servico .cabecalho_servico .titulo {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .section_principal .container_principal .descricao {
+        max-width: none;
+
+    }
+    .section_servico .container_servico {
+        flex-wrap: wrap;
+    }
+
+    .section_destaque .titulo_destaque {
+        font-size: 2.5rem;
+    }
+
+    .section_proposta .container_descricao .titulo_proposta, .section_contato .titulo {
+        font-size: 2.4rem;
+    }
+
+    .section_video .cabecalho_video .titulo, .section_contato .titulo  {
+        text-align: center;
+    }
+
+    #linha-mobile {
+        display: block;
+    }
+}

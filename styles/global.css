@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Barlow:wght@200;400&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #000;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container_cabecalho, .section_principal, .section_destaque, .section_servico, .section_video, .section_feedback, .section_proposta {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.button_acao {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    height: 4rem;
+    border-radius: .5rem;
+    background-color: #ff5200;
+    color: #fff;
+    transition:  all .3s;
+    text-transform: uppercase;
+}
+
+.button_acao:hover {
+    transform: scale(1.1);
+}
+
+#linha-mobile {
+    display: none;
+}
